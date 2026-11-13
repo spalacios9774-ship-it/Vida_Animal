@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulario para registrar el ingreso de un nuevo animal rescatado.">
+  <title>Vida Animal | Reportar animal</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a class="marca" href="index.html">
+        <img src="logo.svg" alt="Logotipo de Vida Animal" width="46" height="46">
+        <span>Vida Animal <small>Rescate y adopción</small></span>
+      </a>
+      <nav aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="reportar.html" aria-current="page">Reportar animal</a></li>
+          <li><a href="rescates.html">Rescates</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="bloque" aria-labelledby="titulo-reportar">
+      <div class="contenedor">
+        <p class="etiqueta etiqueta--oscura">Nuevo ingreso</p>
+        <h1 id="titulo-reportar">Reportar un animal rescatado</h1>
+        <p class="bajada">Completa los datos del caso con el mayor detalle posible. Con esta información el equipo decidirá quién se encarga del rescate y con qué urgencia.</p>
+
+        <div class="disposicion">
+          <form class="formulario" action="#" method="post">
+            <fieldset>
+              <legend>Datos del caso</legend>
+
+              <div class="campo">
+                <label for="titulo">Título del caso o nombre provisional</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Ej.: perrita café de la Av. Principal" required>
+              </div>
+
+              <div class="fila">
+                <div class="campo">
+                  <label for="categoria">Categoría</label>
+                  <select id="categoria" name="categoria" required>
+                    <option value="">Selecciona una categoría</option>
+                    <option value="perros">Perros</option>
+                    <option value="gatos">Gatos</option>
+                    <option value="fauna-silvestre">Fauna Silvestre</option>
+                  </select>
+                </div>
+                <div class="campo">
+                  <label for="fecha">Fecha del rescate</label>
+                  <input type="date" id="fecha" name="fecha" required>
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="ubicacion">Ubicación donde se encontró</label>
+                <input type="text" id="ubicacion" name="ubicacion" placeholder="Barrio, calle o punto de referencia" required>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Urgencia médica</legend>
+              <div class="opciones">
+                <label class="opcion"><input type="radio" name="urgencia" value="alta" required> Alta</label>
+                <label class="opcion"><input type="radio" name="urgencia" value="media"> Media</label>
+                <label class="opcion"><input type="radio" name="urgencia" value="baja"> Baja</label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Descripción del estado</legend>
+              <div class="campo">
+                <label for="descripcion">Describe en qué estado se encontró el animal</label>
+                <textarea id="descripcion" name="descripcion" rows="5" placeholder="Heridas visibles, comportamiento, si estaba acompañado, etc." required></textarea>
+              </div>
+              <div class="campo">
+                <label for="foto">Fotografía (opcional)</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Datos de quien reporta</legend>
+              <div class="fila">
+                <div class="campo">
+                  <label for="reportante">Nombre completo</label>
+                  <input type="text" id="reportante" name="reportante" required>
+                </div>
+                <div class="campo">
+                  <label for="correo">Correo electrónico</label>
+                  <input type="email" id="correo" name="correo" required>
+                </div>
+              </div>
+            </fieldset>
+
+            <p class="acciones">
+              <button class="boton" type="submit">Registrar rescate</button>
+              <button class="boton boton--claro" type="reset">Limpiar formulario</button>
+            </p>
+          </form>
+
+          <aside class="lateral" aria-labelledby="titulo-consejos">
+            <img src="imagen5.jpg" alt="Voluntaria sosteniendo con cuidado a un cachorro" width="400" height="260">
+            <h2 id="titulo-consejos">Antes de reportar</h2>
+            <ul>
+              <li>Mantén la calma y no persigas al animal.</li>
+              <li>Si está herido, evita moverlo bruscamente.</li>
+              <li>Con fauna silvestre, no lo alimentes ni lo manipules sin guantes.</li>
+              <li>Anota un punto de referencia claro para ubicarlo rápido.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <section aria-labelledby="pie-contacto">
+        <h2 id="pie-contacto">Contacto</h2>
+        <address>
+          Refugio Vida Animal<br>
+          Guayaquil, Ecuador<br>
+          <a href="mailto:contacto@vidaanimal.example">contacto@vidaanimal.example</a><br>
+          Teléfono: 04 000 0000
+        </address>
+      </section>
+      <nav aria-label="Menú del pie de página">
+        <h2>Navegación</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="reportar.html">Reportar animal</a></li>
+          <li><a href="rescates.html">Rescates</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="derechos">&copy; 2026 Vida Animal. Prototipo académico &ndash; Universidad Técnica de Manabí.</p>
+  </footer>
+</body>
+</html>

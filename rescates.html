@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Listado organizado de los casos de rescate registrados en el refugio.">
+  <title>Vida Animal | Rescates</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a class="marca" href="index.html">
+        <img src="logo.svg" alt="Logotipo de Vida Animal" width="46" height="46">
+        <span>Vida Animal <small>Rescate y adopción</small></span>
+      </a>
+      <nav aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="reportar.html">Reportar animal</a></li>
+          <li><a href="rescates.html" aria-current="page">Rescates</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="bloque" aria-labelledby="titulo-rescates">
+      <div class="contenedor">
+        <p class="etiqueta etiqueta--oscura">Seguimiento de casos</p>
+        <h1 id="titulo-rescates">Rescates registrados</h1>
+        <p class="bajada">Consulta los casos del refugio con su urgencia, estado y responsable asignado.</p>
+
+        <div class="tabla-contenedor">
+          <table>
+            <caption>Casos de rescate y adopción</caption>
+            <thead>
+              <tr>
+                <th scope="col">N.º caso</th>
+                <th scope="col">Animal</th>
+                <th scope="col">Especie</th>
+                <th scope="col">Urgencia</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Encargado</th>
+                <th scope="col">Ingreso</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">VA-001</th>
+              <td>Luna, perra mestiza</td>
+              <td>Perros</td>
+              <td><span class="urgencia urgencia--alta">Alta</span></td>
+              <td><span class="estado estado--tratamiento">En tratamiento</span></td>
+              <td>Dra. María Párraga</td>
+              <td>2 oct 2026</td>
+            </tr>
+            <tr>
+              <th scope="row">VA-002</th>
+              <td>Michi, gato atigrado</td>
+              <td>Gatos</td>
+              <td><span class="urgencia urgencia--media">Media</span></td>
+              <td><span class="estado estado--rescatado">Rescatado</span></td>
+              <td>Luis Vera (voluntario)</td>
+              <td>9 oct 2026</td>
+            </tr>
+            <tr>
+              <th scope="row">VA-003</th>
+              <td>Iguana juvenil</td>
+              <td>Fauna silvestre</td>
+              <td><span class="urgencia urgencia--baja">Baja</span></td>
+              <td><span class="estado estado--reportado">Reportado</span></td>
+              <td>Ana Cedeño (voluntaria)</td>
+              <td>12 oct 2026</td>
+            </tr>
+            <tr>
+              <th scope="row">VA-004</th>
+              <td>Rocky, perro adulto</td>
+              <td>Perros</td>
+              <td><span class="urgencia urgencia--media">Media</span></td>
+              <td><span class="estado estado--adopcion">Disponible para adopción</span></td>
+              <td>Dr. Carlos Mera</td>
+              <td>15 oct 2026</td>
+            </tr>
+            <tr>
+              <th scope="row">VA-005</th>
+              <td>Nube, gata blanca</td>
+              <td>Gatos</td>
+              <td><span class="urgencia urgencia--baja">Baja</span></td>
+              <td><span class="estado estado--adopcion">Disponible para adopción</span></td>
+              <td>Dra. María Párraga</td>
+              <td>20 oct 2026</td>
+            </tr>
+            <tr>
+              <th scope="row">VA-006</th>
+              <td>Lechuza herida</td>
+              <td>Fauna silvestre</td>
+              <td><span class="urgencia urgencia--alta">Alta</span></td>
+              <td><span class="estado estado--tratamiento">En tratamiento</span></td>
+              <td>Dr. Carlos Mera</td>
+              <td>24 oct 2026</td>
+            </tr>
+            <tr>
+              <th scope="row">VA-007</th>
+              <td>Canela, cachorra</td>
+              <td>Perros</td>
+              <td><span class="urgencia urgencia--alta">Alta</span></td>
+              <td><span class="estado estado--rescatado">Rescatado</span></td>
+              <td>Pedro Zambrano (voluntario)</td>
+              <td>30 oct 2026</td>
+            </tr>
+            <tr>
+              <th scope="row">VA-008</th>
+              <td>Tom, gato callejero</td>
+              <td>Gatos</td>
+              <td><span class="urgencia urgencia--media">Media</span></td>
+              <td><span class="estado estado--reportado">Reportado</span></td>
+              <td>Sin asignar</td>
+              <td>5 nov 2026</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque bloque--tenue" aria-labelledby="titulo-especie">
+      <div class="contenedor">
+        <h2 id="titulo-especie">Resumen por especie</h2>
+        <ul class="lista-resumen">
+          <li><strong>Perros:</strong> 3 casos</li>
+          <li><strong>Gatos:</strong> 3 casos</li>
+          <li><strong>Fauna silvestre:</strong> 2 casos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="titulo-estados">
+      <div class="contenedor">
+        <h2 id="titulo-estados">Guía de estados</h2>
+        <div class="cuadricula cuadricula--4">
+          <article class="indicador">
+            <h3><span class="estado estado--reportado">Reportado</span></h3>
+            <p>El aviso fue recibido y espera asignación de un voluntario.</p>
+          </article>
+          <article class="indicador">
+            <h3><span class="estado estado--rescatado">Rescatado</span></h3>
+            <p>El animal ya fue recogido y se encuentra en el refugio.</p>
+          </article>
+          <article class="indicador">
+            <h3><span class="estado estado--tratamiento">En tratamiento</span></h3>
+            <p>Recibe atención veterinaria y seguimiento de su salud.</p>
+          </article>
+          <article class="indicador">
+            <h3><span class="estado estado--adopcion">Disponible para adopción</span></h3>
+            <p>Está sano y listo para encontrar un hogar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <section aria-labelledby="pie-contacto">
+        <h2 id="pie-contacto">Contacto</h2>
+        <address>
+          Refugio Vida Animal<br>
+          Guayaquil, Ecuador<br>
+          <a href="mailto:contacto@vidaanimal.example">contacto@vidaanimal.example</a><br>
+          Teléfono: 04 000 0000
+        </address>
+      </section>
+      <nav aria-label="Menú del pie de página">
+        <h2>Navegación</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="reportar.html">Reportar animal</a></li>
+          <li><a href="rescates.html">Rescates</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="derechos">&copy; 2026 Vida Animal. Prototipo académico &ndash; Universidad Técnica de Manabí.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vida Animal: sistema de control de rescate y adopción animal.">
+  <title>Vida Animal | Panel principal</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <a class="marca" href="index.html">
+        <img src="logo.svg" alt="Logotipo de Vida Animal" width="46" height="46">
+        <span>Vida Animal <small>Rescate y adopción</small></span>
+      </a>
+      <nav aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="reportar.html">Reportar animal</a></li>
+          <li><a href="rescates.html">Rescates</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="hero" aria-labelledby="titulo-bienvenida">
+      <div class="contenedor hero__interior">
+        <div class="hero__texto">
+          <p class="etiqueta">Bienvenido al panel del refugio</p>
+          <h1 id="titulo-bienvenida">Cada vida merece una segunda oportunidad</h1>
+          <p>Vida Animal reúne en un solo lugar el reporte, el seguimiento y la adopción de perros, gatos y fauna silvestre rescatados. Desde aquí puedes registrar un nuevo caso o revisar cómo avanza cada rescate.</p>
+          <p class="acciones">
+            <a class="boton" href="reportar.html">Reportar un animal</a>
+            <a class="boton boton--claro" href="rescates.html">Ver rescates registrados</a>
+          </p>
+        </div>
+        <img class="hero__imagen" src="imagen1.jpg" alt="Un perro y un gato descansando juntos" width="640" height="460">
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="titulo-resumen">
+      <div class="contenedor">
+        <h2 id="titulo-resumen">Resumen del refugio</h2>
+        <p class="bajada">Cifras de referencia del prototipo.</p>
+        <div class="cuadricula cuadricula--4">
+          <article class="indicador">
+            <p class="indicador__numero">128</p>
+            <h3>Casos atendidos</h3>
+          </article>
+          <article class="indicador">
+            <p class="indicador__numero">24</p>
+            <h3>En tratamiento</h3>
+          </article>
+          <article class="indicador">
+            <p class="indicador__numero">17</p>
+            <h3>Disponibles para adopción</h3>
+          </article>
+          <article class="indicador">
+            <p class="indicador__numero">87</p>
+            <h3>Adopciones concretadas</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque bloque--tenue" aria-labelledby="titulo-recientes">
+      <div class="contenedor">
+        <h2 id="titulo-recientes">Casos recientes</h2>
+        <p class="bajada">Los últimos animales ingresados al refugio.</p>
+        <div class="cuadricula cuadricula--3">
+          <article class="tarjeta">
+            <img src="imagen2.jpg" alt="Perro mestizo recostado" width="400" height="260">
+            <div class="tarjeta__cuerpo">
+              <h3>Luna, perra mestiza</h3>
+              <p>Rescatada con una herida en la pata trasera. Recibe curaciones diarias.</p>
+              <p><span class="estado estado--tratamiento">En tratamiento</span></p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="imagen3.jpg" alt="Gato atigrado mirando a la cámara" width="400" height="260">
+            <div class="tarjeta__cuerpo">
+              <h3>Michi, gato atigrado</h3>
+              <p>Encontrado en una zona de construcción. Se encuentra estable y alimentándose.</p>
+              <p><span class="estado estado--rescatado">Rescatado</span></p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="imagen4.jpg" alt="Iguana descansando sobre una rama" width="400" height="260">
+            <div class="tarjeta__cuerpo">
+              <h3>Iguana juvenil</h3>
+              <p>Reubicada tras ser hallada en un patio. Será liberada en su hábitat natural.</p>
+              <p><span class="estado estado--reportado">Reportado</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="titulo-proceso">
+      <div class="contenedor">
+        <h2 id="titulo-proceso">Etapas del proceso de rescate</h2>
+        <ol class="pasos">
+          <li><h3>Reporte</h3><p>Un ciudadano informa sobre un animal en riesgo.</p></li>
+          <li><h3>Rescate</h3><p>Un voluntario acude al lugar y traslada al animal.</p></li>
+          <li><h3>Atención veterinaria</h3><p>Se evalúa su salud y se registra el tratamiento.</p></li>
+          <li><h3>Adopción</h3><p>Se revisa la solicitud y se entrega al nuevo hogar.</p></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <section aria-labelledby="pie-contacto">
+        <h2 id="pie-contacto">Contacto</h2>
+        <address>
+          Refugio Vida Animal<br>
+          Guayaquil, Ecuador<br>
+          <a href="mailto:contacto@vidaanimal.example">contacto@vidaanimal.example</a><br>
+          Teléfono: 04 000 0000
+        </address>
+      </section>
+      <nav aria-label="Menú del pie de página">
+        <h2>Navegación</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="reportar.html">Reportar animal</a></li>
+          <li><a href="rescates.html">Rescates</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="derechos">&copy; 2026 Vida Animal. Prototipo académico &ndash; Universidad Técnica de Manabí.</p>
+  </footer>
+</body>
+</html>
